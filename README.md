@@ -4,7 +4,7 @@
 
 ---
 
-## Rob T. | AI Governance & Compliance Professional
+## Rob Parker | AI Governance & Compliance Professional
 
 I build AND govern AI systems for production environments. This portfolio demonstrates real-world implementation of the **NIST AI Risk Management Framework (AI RMF)** for a production-ready AI-powered SaaS platform.
 
@@ -293,6 +293,6 @@ ai-governance-portfolio/
 
 ---
 
-*Built by Rob T. — AI Governance Professional & Founder, Broadlake Technologies*
+*Built by Rob Parker — AI Governance Professional & Founder, Broadlake Technologies*
 
 *Last Updated: November 2025*
