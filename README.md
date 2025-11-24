@@ -1,6 +1,6 @@
 # LAX Commit Coach - AI Governance Portfolio
 
-> **Note:** This repository contains documentation and implementation materials for LAX Commit Coach. The source code is maintained in a private repository as this is an active commercial product. For a live demonstration, visit https://laxcommitcoach.com
+> **Note:** This repository contains documentation and implementation materials for LAX Commit Coach. The source code is maintained in a private repository as this is an active commercial product. For a live demonstration, visit [laxcommitcoach.com](https://laxcommitcoach.com)
 
 ---
 
@@ -36,7 +36,7 @@ I build AND govern AI systems for production environments. This portfolio demons
 
 ---
 
-## 🤖 AI Systems Under Governance
+##  AI Systems Under Governance
 
 This platform includes **4 production AI systems** that I designed, built, and now govern:
 
@@ -269,10 +269,10 @@ I built governance BEFORE scaling—not as a reactive cleanup after problems eme
 
 ##  Contact
 
-- **LinkedIn:** www.linkedin.com/in/robrparker
+- **LinkedIn:** [linkedin.com/in/robrparker](https://www.linkedin.com/in/robrparker)
 - **Email:** robrparker@gmail.com
 - **Location:** Charlotte, NC (Remote preferred)
-- **Live Demo:** https://laxcommitcoach.com
+- **Live Demo:** [laxcommitcoach.com](https://laxcommitcoach.com)
 
 ---
 
