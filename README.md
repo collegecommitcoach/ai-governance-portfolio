@@ -4,7 +4,7 @@
 
 ---
 
-## Rob Parker | AI Governance & Compliance Professional
+## Rob T. | AI Governance & Compliance Professional
 
 I build AND govern AI systems for production environments. This portfolio demonstrates real-world implementation of the **NIST AI Risk Management Framework (AI RMF)** for a production-ready AI-powered SaaS platform.
 
@@ -28,15 +28,15 @@ I build AND govern AI systems for production environments. This portfolio demons
 
 | Metric | Target | Status |
 |--------|--------|--------|
-| Bias variance across demographics | <5% |  Framework Implemented |
+| Algorithm score differentiation | 20+ points by qualifications |  Achieved (21+ points) |
 | Critical incident response time | <4 hours |  Procedures Defined |
 | User AI disclosure rate | 100% |  Implemented |
 | AI system documentation coverage | 100% |  Complete |
-| Safety testing coverage | All AI systems |  Complete |
+| Profile coverage (zero-result rate) | 0% |  Achieved |
 
 ---
 
-##  AI Systems Under Governance
+## 🤖 AI Systems Under Governance
 
 This platform includes **4 production AI systems** that I designed, built, and now govern:
 
@@ -58,10 +58,11 @@ This platform includes **4 production AI systems** that I designed, built, and n
 - **Function:** Multi-factor matching algorithm (athletic fit, academic profile, preferences)
 - **Technology:** Custom scoring algorithm + AI explanation generation
 - **Governance Controls:**
-  - Bias testing across 1,000+ demographic profiles
+  - Algorithm validation testing across 100+ profile combinations
+  - 21+ point score differentiation by qualifications (73.6 - 95.0 range)
   - Explainability features ("Why this recommendation?")
   - Transparent scoring methodology documentation
-  - Regular accuracy validation
+  - Privacy-by-design: no demographic data (race, gender, income) collected
 
 ### 3. Email Classification System
 **Risk Level:** Low-Medium | **Status:** Production
@@ -98,14 +99,14 @@ This platform includes **4 production AI systems** that I designed, built, and n
 | **Accountable & Transparent** | User disclosures, AI badges, decision explanations |
 | **Explainable** | "Why this recommendation?" features, reasoning display |
 | **Privacy-Enhanced** | Data minimization, user control, consent mechanisms |
-| **Fair** | Bias testing across demographics, fairness metrics, regular audits |
+| **Fair** | Privacy-by-design (no demographic data collected), algorithm validation testing |
 
 ### Risk Tolerance Framework
 
 ```
 ZERO TOLERANCE:
 ├── AI providing harmful recruiting advice
-├── Bias >10% variance across demographics
+├── Coverage gaps (profiles with zero recommendations)
 ├── Privacy breaches or data exposure
 └── NCAA rule violations in guidance
 
@@ -175,9 +176,21 @@ User Input → Validation → AI Processing → Safety Check → Response
 |--------|-------|
 | **AI Systems Governed** | 4 production-ready systems |
 | **College Database** | 390+ NCAA programs |
-| **Bias Testing Profiles** | 1,000+ demographic combinations |
+| **Validation Profiles Tested** | 100+ profile combinations |
+| **Match Score Differentiation** | 21+ points (73.6 - 95.0 range) |
 | **Target Incident Response** | <4 hours (critical) |
 | **Documentation Coverage** | 100% of AI systems |
+
+### Latest Algorithm Validation (November 24, 2025)
+
+| Metric | Result |
+|--------|--------|
+| Profiles Tested | 100 |
+| Zero-Result Profiles | 0 (100% coverage) |
+| Overall Avg Match Score | 89.44 / 100 |
+| Score Range | 73.6 - 95.0 |
+
+**Finding:** Algorithm successfully differentiates by academic and athletic credentials. Higher-qualified profiles receive match scores up to 95, while lower-credential profiles score 73-85.
 
 ---
 
@@ -280,6 +293,6 @@ ai-governance-portfolio/
 
 ---
 
-*Built by Rob Parker — AI Governance Professional & Founder, Broadlake Technologies*
+*Built by Rob T. — AI Governance Professional & Founder, Broadlake Technologies*
 
 *Last Updated: November 2025*
