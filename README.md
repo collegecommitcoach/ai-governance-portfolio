@@ -8,7 +8,7 @@
 
 I build AND govern AI systems for production environments. This portfolio demonstrates real-world implementation of the NIST AI Risk Management Framework (AI RMF) for a production-ready AI-powered SaaS platform.
 
-I've both built production AI systems AND implemented comprehensive governance frameworks to ensure they're safe, fair, and transparent.
+I've built production AI systems AND implemented comprehensive governance frameworks to ensure they're safe, fair, and transparent.
 
 ---
 
