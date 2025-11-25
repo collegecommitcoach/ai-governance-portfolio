@@ -6,9 +6,9 @@
 
 ## Rob Parker | AI Governance & Compliance Professional
 
-I build AND govern AI systems for production environments. This portfolio demonstrates real-world implementation of the **NIST AI Risk Management Framework (AI RMF)** for a production-ready AI-powered SaaS platform.
+I build AND govern AI systems for production environments. This portfolio demonstrates real-world implementation of the NIST AI Risk Management Framework (AI RMF) for a production-ready AI-powered SaaS platform.
 
-**What makes this unique:** Most AI governance professionals come from policy or pure engineering. I've done both—built production AI systems AND implemented comprehensive governance frameworks to ensure they're safe, fair, and transparent.
+I've done both—built production AI systems AND implemented comprehensive governance frameworks to ensure they're safe, fair, and transparent.
 
 ---
 
@@ -28,15 +28,15 @@ I build AND govern AI systems for production environments. This portfolio demons
 
 | Metric | Target | Status |
 |--------|--------|--------|
-| Algorithm score differentiation | 20+ points by qualifications |  Achieved (21+ points) |
-| Critical incident response time | <4 hours |  Procedures Defined |
-| User AI disclosure rate | 100% |  Implemented |
-| AI system documentation coverage | 100% |  Complete |
-| Profile coverage (zero-result rate) | 0% |  Achieved |
+| Algorithm score differentiation | 20+ points by qualifications | Achieved (21+ points) |
+| Critical incident response time | <4 hours | Procedures Defined |
+| User AI disclosure rate | 100% | Implemented |
+| AI system documentation coverage | 100% | Complete |
+| Profile coverage (zero-result rate) | 0% | Achieved |
 
 ---
 
-##  AI Systems Under Governance
+## AI Systems Under Governance
 
 This platform includes **4 production AI systems** that I designed, built, and now govern:
 
@@ -170,7 +170,7 @@ User Input → Validation → AI Processing → Safety Check → Response
 
 ---
 
-##  Platform Metrics
+## Platform Metrics
 
 | Metric | Value |
 |--------|-------|
@@ -257,7 +257,7 @@ I built governance BEFORE scaling—not as a reactive cleanup after problems eme
 
 ---
 
-##  Seeking Opportunities In
+## Seeking Opportunities In
 
 - **AI Governance Manager** – Implementing AI risk management frameworks
 - **Responsible AI Program Manager** – Driving organizational AI safety initiatives
@@ -267,7 +267,7 @@ I built governance BEFORE scaling—not as a reactive cleanup after problems eme
 
 ---
 
-##  Contact
+## Contact
 
 - **LinkedIn:** [linkedin.com/in/robrparker](https://www.linkedin.com/in/robrparker)
 - **Email:** robrparker@gmail.com
@@ -276,7 +276,7 @@ I built governance BEFORE scaling—not as a reactive cleanup after problems eme
 
 ---
 
-##  Repository Structure
+## Repository Structure
 
 ```
 ai-governance-portfolio/
