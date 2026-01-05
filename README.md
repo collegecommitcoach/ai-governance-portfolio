@@ -12,7 +12,7 @@ I've built production AI systems AND implemented comprehensive governance framew
 
 ---
 
-##  AI Governance Implementation
+## AI Governance Implementation
 
 ### NIST AI RMF Compliance Documentation
 
@@ -38,7 +38,7 @@ I've built production AI systems AND implemented comprehensive governance framew
 
 ## AI Systems Under Governance
 
-This platform includes **4 production AI systems** that I designed, built, and now govern:
+This platform includes **5 production AI systems** that I designed, built, and now govern:
 
 ### 1. AI Recruiting Chatbot
 **Risk Level:** Medium | **Status:** Production
@@ -51,20 +51,39 @@ This platform includes **4 production AI systems** that I designed, built, and n
   - NCAA compliance validation
   - Feedback collection (thumbs up/down)
   - Emergency disable capability
+  - Pre-computed context system for consistency
 
 ### 2. College Recommendation Engine
 **Risk Level:** Medium | **Status:** Production
 
-- **Function:** Multi-factor matching algorithm (athletic fit, academic profile, preferences)
-- **Technology:** Custom scoring algorithm + AI explanation generation
+- **Function:** Multi-factor matching algorithm (recruiting fit, academic profile, preferences)
+- **Technology:** Custom 5-factor scoring algorithm + AI explanation generation
 - **Governance Controls:**
   - Algorithm validation testing across 100+ profile combinations
   - 21+ point score differentiation by qualifications (73.6 - 95.0 range)
   - Explainability features ("Why this recommendation?")
   - Transparent scoring methodology documentation
   - Privacy-by-design: no demographic data (race, gender, income) collected
+  - Interest override system for demonstrated school engagement
 
-### 3. Email Classification System
+### 3. Automated Fit Calculation System (NEW)
+**Risk Level:** Low-Medium | **Status:** Production
+
+- **Function:** Calculates objective fit scores for saved colleges based on 5 factors
+- **Technology:** PostgreSQL functions (`calculate_college_fit`, `calculate_college_fit_batch`)
+- **Scoring Factors:**
+  - Recruiting Fit (35%): User percentile vs. college recruiting ceiling
+  - Academic Fit (30%): GPA/test scores vs. acceptance rate
+  - Location Fit (15%): Region preference match
+  - Size Fit (10%): School size preference match
+  - Setting Fit (10%): Urban/suburban/rural preference match
+- **Governance Controls:**
+  - Signal-based interest overrides (phone calls, visits trump calculated fit)
+  - Transparent breakdown shown to users
+  - No financial fit scoring (avoids judging family financial situations)
+  - Confidence indicators for inferred data
+
+### 4. Email Classification System
 **Risk Level:** Low-Medium | **Status:** Production
 
 - **Function:** Interest level analysis (HIGH/MIXED/MARKETING) for recruiting emails
@@ -75,19 +94,27 @@ This platform includes **4 production AI systems** that I designed, built, and n
   - Privacy-preserving processing
   - Accuracy monitoring
 
-### 4. Relationship Health Analyzer
+### 5. Pre-Computed Intelligence System (NEW)
 **Risk Level:** Low | **Status:** Production
 
-- **Function:** Sentiment analysis and engagement scoring for coach communications
-- **Technology:** Multi-dimensional health scoring algorithm
+- **Function:** Generates intelligence briefings for chatbot context
+- **Technology:** Edge function + Gemini AI analysis
+- **Outputs:**
+  - Recruiting snapshot (player status summary)
+  - Pipeline intelligence (school categorization)
+  - Communication insights (patterns, response rates)
+  - Strategic priorities (urgent actions)
+  - Fit reality assessment (interest-aware school categorization)
+  - Recruiting level analysis (percentile validation)
 - **Governance Controls:**
-  - Transparent scoring factors
+  - Signal-based percentile inference with confidence levels
+  - Interest override detection
+  - Graceful fallback for missing data
   - No automated actions (advisory only)
-  - User control over data inputs
 
 ---
 
-##  Governance Framework Highlights
+## Governance Framework Highlights
 
 ### Trustworthy AI Principles (NIST AI RMF Aligned)
 
@@ -97,8 +124,8 @@ This platform includes **4 production AI systems** that I designed, built, and n
 | **Safe** | NCAA compliance validation, harmful content filtering, safety boundaries |
 | **Secure & Resilient** | Prompt injection protection, API security, emergency kill switch |
 | **Accountable & Transparent** | User disclosures, AI badges, decision explanations |
-| **Explainable** | "Why this recommendation?" features, reasoning display |
-| **Privacy-Enhanced** | Data minimization, user control, consent mechanisms |
+| **Explainable** | "Why this recommendation?" features, fit breakdown display, interest override reasons |
+| **Privacy-Enhanced** | Data minimization, user control, consent mechanisms, no financial judgment |
 | **Fair** | Privacy-by-design (no demographic data collected), algorithm validation testing |
 
 ### Risk Tolerance Framework
@@ -168,20 +195,30 @@ User Input → Validation → AI Processing → Safety Check → Response
          Incident Detection         Continuous Improvement
 ```
 
+### Fit Calculation Architecture (NEW)
+```
+User Profile → calculate_college_fit() → Objective Score
+     +                    ↓
+Communications → Interest Override Detection → Final Fit Level
+     +                    ↓
+User Ratings → Combined Display → Transparent Breakdown
+```
+
 ---
 
 ## Platform Metrics
 
 | Metric | Value |
 |--------|-------|
-| **AI Systems Governed** | 4 production-ready systems |
+| **AI Systems Governed** | 5 production-ready systems |
 | **College Database** | 390+ NCAA programs |
 | **Validation Profiles Tested** | 100+ profile combinations |
 | **Match Score Differentiation** | 21+ points (73.6 - 95.0 range) |
 | **Target Incident Response** | <4 hours (critical) |
 | **Documentation Coverage** | 100% of AI systems |
+| **User Input Reduction** | 92% (24 inputs → 2 star ratings) |
 
-### Latest Algorithm Validation (November 24, 2025)
+### Latest Algorithm Validation (January 2026)
 
 | Metric | Result |
 |--------|--------|
@@ -192,9 +229,25 @@ User Input → Validation → AI Processing → Safety Check → Response
 
 **Finding:** Algorithm successfully differentiates by academic and athletic credentials. Higher-qualified profiles receive match scores up to 95, while lower-credential profiles score 73-85.
 
+### Fit Calculation System Validation
+
+| Metric | Result |
+|--------|--------|
+| Factors Calculated Automatically | 5 (100% of objective factors) |
+| User Inputs Required | 2 (reduced from 24) |
+| Interest Override Detection | Phone calls, campus visits, personalized emails |
+| Financial Fit | Removed (avoids presumptuous judgment) |
+
 ---
 
-##  Platform Capabilities
+## Platform Capabilities
+
+### Simplified Evaluation System (NEW)
+- **Before:** 12 factors × 2 inputs each = 24 user inputs required
+- **After:** 2 star ratings (overall vibe, program feel)
+- **Automated:** 5-factor objective fit calculated without user input
+- **Transparent:** Full breakdown shown to users explaining each score
+- **Interest-Aware:** Schools showing interest override calculated fit
 
 ### Engagement & Adoption Analytics
 - Profile completion tracking for activation metrics
@@ -207,12 +260,15 @@ User Input → Validation → AI Processing → Safety Check → Response
 - Response time analytics
 - Engagement trend identification
 - Proactive at-risk detection
+- **Interest override detection (coach calls, visit invites)**
 
 ### Visual Pipeline Management
 - Drag-and-drop stage tracking
 - Real-time progression analytics
 - Automated follow-up reminders
 - Journey mapping visualization
+- **Fit badges on every college card**
+- **Pipeline balance warnings**
 
 ### Multi-Stakeholder Access
 - Role-based access control
@@ -222,21 +278,23 @@ User Input → Validation → AI Processing → Safety Check → Response
 
 ---
 
-##  Professional Background
+## Professional Background
 
 ### Why I'm Uniquely Qualified for AI Governance
 
 **Technical Implementation Experience:**
-- Built 4 production AI systems from scratch
+- Built 5 production AI systems from scratch
 - Integrated Google Gemini AI for real-time guidance
 - Designed multi-factor recommendation algorithms
 - Implemented sentiment analysis and classification systems
+- **Designed simplified evaluation system reducing user friction by 92%**
 
 **Governance & Risk Management:**
 - Implemented NIST AI RMF for production systems
 - Created comprehensive bias testing methodology
 - Designed incident response procedures
 - Built transparency and accountability mechanisms
+- **Implemented interest override system for demonstrated engagement**
 
 **Enterprise Stakeholder Management:**
 - 8 years Customer Success leadership at Dell Technologies
@@ -259,11 +317,11 @@ I built governance BEFORE scaling—not as a reactive cleanup after problems eme
 
 ## Seeking Opportunities In
 
-- **AI Governance Manager** – Implementing AI risk management frameworks
-- **Responsible AI Program Manager** – Driving organizational AI safety initiatives
-- **AI Compliance Manager** – Ensuring regulatory alignment (EU AI Act, NIST)
-- **AI Risk Manager** – Assessing and mitigating AI system risks
-- **Trust & Safety Manager** – Building safe AI user experiences
+- **AI Governance Manager** — Implementing AI risk management frameworks
+- **Responsible AI Program Manager** — Driving organizational AI safety initiatives
+- **AI Compliance Manager** — Ensuring regulatory alignment (EU AI Act, NIST)
+- **AI Risk Manager** — Assessing and mitigating AI system risks
+- **Trust & Safety Manager** — Building safe AI user experiences
 
 ---
 
@@ -288,11 +346,13 @@ ai-governance-portfolio/
 │   ├── AI_Incident_Response_Plan.md   # MANAGE function
 │   └── NIST_Implementation_Roadmap.md # Implementation guide
 └── resources/
-    └── APPLICATION_OVERVIEW.md        # Full platform documentation
+    ├── APPLICATION_OVERVIEW.md        # Full platform documentation
+    └── COMMIT_COACH_AI_PROMPTS.md     # AI personality & prompts
 ```
 
 ---
 
 *Built by Rob Parker — AI Governance Professional & Founder, Broadlake Technologies*
 
-*Last Updated: November 2025*
+*Last Updated: January 2026*
+updated with simplified college fit system
