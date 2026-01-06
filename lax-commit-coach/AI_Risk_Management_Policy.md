@@ -180,6 +180,21 @@ LAX Commit Coach AI systems adhere to these principles:
 | Coverage Analysis | Ensure all profile types get results | ✅ Implemented |
 | Validation Reporting | Exportable validation results | ✅ Implemented |
 
+### 5.6 Security Review Log
+
+Ongoing documentation of security assessments, findings, and remediation status.
+
+| Date | Area Reviewed | Finding | Status | Notes |
+|------|---------------|---------|--------|-------|
+| Jan 2025 | RLS Policies - users table | Scanner flagged PII exposure risk | ✅ Verified Secure | RLS enforces `auth.uid() = id`; parent access requires verified invitation + time-based checks |
+| Jan 2025 | RLS Policies - coach_contacts table | Scanner flagged data harvesting risk | ✅ Verified Secure | RLS enforces `auth.uid() = user_id` for all operations |
+| Jan 2025 | React 18.3.1 (CVE-2025-21546) | Known dependency vulnerability | 🟡 Monitoring | Patch (18.3.2) not yet released; upgrade planned when available |
+
+**Review Process:**
+- Security scanner alerts reviewed and triaged
+- RLS policies verified against Supabase configuration
+- Findings documented with accept/remediate justification
+- Open items tracked until resolution
 ---
 
 ## 6. Privacy-by-Design
@@ -247,7 +262,7 @@ This policy implements the NIST AI Risk Management Framework:
 |---------|------|---------|
 | 1.0 | Nov 2025 | Initial policy |
 | 2.0 | Nov 24, 2025 | Updated with implemented features, validation results |
-
+| 2.1 | Jan 6, 2025 | Added Security Review Log (5.6), documented RLS verification |
 ---
 
 ## 9. Approval
