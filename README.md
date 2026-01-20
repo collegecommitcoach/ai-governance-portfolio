@@ -1,4 +1,4 @@
-# LAX Commit Coach - AI Governance Portfolio
+# LAX Commit Coach - AI Governance
 
 > **Note:** This repository contains documentation and implementation materials for LAX Commit Coach. The source code is maintained in a private repository as this is an active commercial product. For a live demonstration, visit [laxcommitcoach.com](https://laxcommitcoach.com)
 
