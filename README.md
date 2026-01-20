@@ -352,7 +352,7 @@ ai-governance-portfolio/
 
 ---
 
-*Built by Rob Parker — AI Governance Professional & Founder, Broadlake Technologies*
+*Built by Rob Parker — Founder, Broadlake Technologies*
 
 *Last Updated: January 2026*
 updated with simplified college fit system
