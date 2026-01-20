@@ -4,7 +4,7 @@
 
 ---
 
-## Rob Parker | AI Governance & Compliance Professional
+## Rob Parker | AI Implementation, Governance & Compliance
 
 I build AND govern AI systems for production environments. This portfolio demonstrates real-world implementation of the NIST AI Risk Management Framework (AI RMF) for a production-ready AI-powered SaaS platform.
 
