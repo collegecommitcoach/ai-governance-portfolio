@@ -111,7 +111,17 @@ This platform includes **5 production AI systems** that I designed, built, and n
   - Interest override detection
   - Graceful fallback for missing data
   - No automated actions (advisory only)
+    
+### Parent Access Security (February 2026)
 
+Implemented centralized, time-bounded parent access controls for student data:
+
+- **`is_active_parent_of()`** - Security definer function enforcing 90-day verification window
+- **11 protected tables** including `user_ai_context` (AI-generated recruiting intelligence)
+- **Auto-refresh mechanism** - verification extends on dashboard load, preventing lockout for active parents
+- **Zero inline policy checks** - all parent access flows through centralized function for auditability
+
+This ensures parents of minor users (14-18 year olds) have appropriate data access that automatically expires if the relationship becomes stale, protecting student privacy while enabling family coordination.
 ---
 
 ## Governance Framework Highlights
