@@ -94,7 +94,7 @@ This platform includes **5 production AI systems** that I designed, built, and n
   - Privacy-preserving processing
   - Accuracy monitoring
 
-### 5. Pre-Computed Intelligence System (NEW)
+### 5. Pre-Computed Intelligence System
 **Risk Level:** Low | **Status:** Production
 
 - **Function:** Generates intelligence briefings for chatbot context
@@ -111,17 +111,7 @@ This platform includes **5 production AI systems** that I designed, built, and n
   - Interest override detection
   - Graceful fallback for missing data
   - No automated actions (advisory only)
-    
-### Parent Access Security (February 2026)
-
-Implemented centralized, time-bounded parent access controls for student data:
-
-- **`is_active_parent_of()`** - Security definer function enforcing 90-day verification window
-- **11 protected tables** including `user_ai_context` (AI-generated recruiting intelligence)
-- **Auto-refresh mechanism** - verification extends on dashboard load, preventing lockout for active parents
-- **Zero inline policy checks** - all parent access flows through centralized function for auditability
-
-This ensures parents of minor users (14-18 year olds) have appropriate data access that automatically expires if the relationship becomes stale, protecting student privacy while enabling family coordination.
+  - **Data protected by 90-day parent access verification**
 ---
 
 ## Governance Framework Highlights
@@ -139,13 +129,13 @@ This ensures parents of minor users (14-18 year olds) have appropriate data acce
 | **Fair** | Privacy-by-design (no demographic data collected), algorithm validation testing |
 
 ### Risk Tolerance Framework
-
 ```
 ZERO TOLERANCE:
 ├── AI providing harmful recruiting advice
 ├── Coverage gaps (profiles with zero recommendations)
 ├── Privacy breaches or data exposure
-└── NCAA rule violations in guidance
+├── NCAA rule violations in guidance
+└── Parent access bypassing verification window
 
 MANAGED ACCEPTANCE:
 ├── Minor accuracy variations (<5% error rate)
@@ -157,6 +147,19 @@ ACCEPTABLE:
 ├── Cosmetic inconsistencies
 └── Minor UX issues
 ```
+
+### Parent Access Controls (Feb 2026)
+
+Implemented centralized, time-bounded access controls protecting minor user data:
+
+| Component | Implementation |
+|-----------|----------------|
+| **Verification Function** | `is_active_parent_of()` — Security definer with 90-day rolling window |
+| **Protected Tables** | 11 tables including `user_ai_context` (AI-generated intelligence) |
+| **Auto-Refresh** | Verification extends on dashboard load — active parents never locked out |
+| **Audit Trail** | Zero inline policy checks — all access flows through centralized function |
+
+Ensures parents of minor users (ages 14-18) have appropriate, time-bounded data access that automatically expires if the relationship becomes stale.
 
 ### Incident Response Structure
 
